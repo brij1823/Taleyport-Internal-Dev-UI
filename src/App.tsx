@@ -240,26 +240,6 @@ function App() {
     }
   }
 
-  const handleReset = () => {
-    setCurrentStep(1)
-    setUploadedImage1(null)
-    setImagePreview1(null)
-    setUploadedImage2(null)
-    setImagePreview2(null)
-    setUploadResponse(null)
-    setAudioGenerated(false)
-    setAudioUrl(null)
-    setAudioResponse(null)
-    setKidName('')
-    setLanguage('English')
-    setGender('boy')
-    setVideoGenerated(false)
-    setVideoImageUrl('')
-    setVideoFaceUrl('')
-    setVideoStoryId(stories.length > 0 ? stories[0].id : '')
-    setVideoOutputPrompts([])
-  }
-
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-900">
