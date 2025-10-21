@@ -356,7 +356,6 @@ function App() {
               onVideoStoryIdChange={setVideoStoryId}
               onGenerateVideo={handleGenerateVideo}
               onCopyToClipboard={copyToClipboard}
-              onReset={handleReset}
               onBack={() => setCurrentStep(2)}
             />
           )}
